@@ -51,6 +51,43 @@
 }
 
 
+/* .container{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px auto 50px;
+} */
+
+/* .header{ */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* grid-column: 2 /span 12;
+} */
+
+/* .footer{
+    /* grid-column: 1/3; */
+    /* grid-column: 1/ span 12; */
+/* } */
+
+/* .menu{
+    grid-column: 1;
+    grid-row: 1/ 3;
+}
+.content{
+    grid-column: 2 /span 12;
+} */
+
+
+
+
+
+
+/* Grid templete Area */
+
 .container{
     color: #fff;
     text-transform: uppercase;
@@ -59,24 +96,23 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 50px auto 50px;
+    grid-template-areas: 
+    ". h h h h h h h h h ."
+    "m m m c c c c c c c c"
+    ". f f f f f f f f f .";
 }
 
 .header{
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
+    grid-area: h;
+}
+.menu{
+    grid-area: m;
+}
 
-    grid-column: 2 /span 12;
+.content{
+    grid-area: c;
 }
 
 .footer{
-    /* grid-column: 1/3; */
-    grid-column: 1/ span 12;
-}
-
-.menu{
-    grid-column: 1;
-    grid-row: 1/ 3;
-}
-.content{
-    grid-column: 2 /span 12;
+    grid-area: f;
 }
