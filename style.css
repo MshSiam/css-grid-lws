@@ -8,3 +8,23 @@
 } */
 
 /* grid fractional unit */
+
+/* .container{
+    text-align: center;
+    background-color: rgb(163, 53, 53);
+    display: grid; */
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-template: 2fr 3fr / 1fr 2fr; */
+    /* grid-template-columns: repeat (3, 1fr ); */
+    /* grid-template: repeat(3, 1fr) / repeat(3 , 1fr);
+    grid-gap: 5px;
+    color: aliceblue;
+     */
+}
+
+/* .container div{
+    border: 1px solid white;
+} */
+
+
+/* positioning */
